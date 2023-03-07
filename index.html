@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login e Cadastro</title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form method="post" action="login.php">
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email">
+      <br>
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password">
+      <br>
+      <input type="submit" value="Login">
+    </form>
+    
+    <h1>Cadastro</h1>
+    <form method="post" action="config.php">
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email">
+      <br>
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password">
+      <br>
+      <label for="confirm_password">Confirme a senha:</label>
+      <input type="password" name="confirm_password" id="confirm_password">
+      <br>
+      <input type="submit" value="Cadastrar">
+    </form>
+  </body>
+</html>
