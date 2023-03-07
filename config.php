@@ -4,7 +4,7 @@
 $host = 'localhost';
 $user = 'root';
 $password = '';
-$dbname = 'formulario-arthur';
+$dbname = 'site';
 
 // Conecta ao banco de dados
 $conn = mysqli_connect($host, $user, $password, $dbname);
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email']) && isset($_PO
   
   if (mysqli_num_rows($result) == 1) {
     // As credenciais são válidas, então redireciona para a página principal
-    header('Location: index.php');
+    header('Location: index.html');
     exit();
   } else {
     // As credenciais são inválidas, então mostra uma mensagem de erro
